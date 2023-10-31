@@ -8,7 +8,7 @@ def encode(pw):
     return encoded
 
 def decode(encoded_pw):
-    pass
+    return "".join([str((int(digit) - 3) % 10) for digit in encoded_pw])
 
 run = True
 menu = """Menu
